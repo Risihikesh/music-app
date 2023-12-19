@@ -1,0 +1,84 @@
+.player_container {
+  padding: 70px;
+  padding-bottom: 0px;
+  margin-left: 25px;
+  /* background-color: #181004; */
+  color: white;
+  padding-top: 40px;
+}
+.song_image img {
+  height: 450px;
+  width: 450px;
+  border-radius: 15px;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+.buttons img {
+  padding: 20px;
+}
+.progressbar img {
+  width: 80%;
+  padding: 20px;
+}
+#audio {
+  display: none;
+}
+#title {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: black;
+}
+#artist {
+  font-size: 15px;
+  padding-bottom: 15px;
+  color: black;
+}
+#mute {
+  height: 48px;
+  width: 48px;
+}
+
+.backgroundimg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -999;
+  -webkit-filter: blur(50px); /* Safari 6.0 - 9.0 */
+  filter: blur(200px);
+  opacity: 100%;
+}
+
+@media screen and (max-width: 376px) {
+  .player_container {
+    width: 330px;
+    position: absolute;
+    left: 0;
+    padding-top: 110px;
+    height: 70vh;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-left: 0;
+  }
+  .song_image img {
+    width: 300px;
+    height: 50%;
+  }
+  .buttons {
+    padding-left: 30px;
+    padding-right: 33px;
+  }
+  .buttons img {
+    padding: 6px;
+  }
+}

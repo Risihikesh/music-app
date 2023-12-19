@@ -1,0 +1,139 @@
+.songs_container {
+  /* background-color: #181004; */
+  padding: 28px;
+  height: 92vh;
+
+}
+.heading {
+  /* width: 115px; */
+  height: 28px;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin-left: 25px;
+  margin-bottom: 36px;
+}
+.search {
+  margin: 10px;
+}
+.search img {
+  height: 40px;
+  width: 90%;
+  background-color: #af9c9c94;
+    border-radius: 26px;
+}
+.tracks {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow: auto;
+  height: 80%;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: #0000002e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff05;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+.track_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  /* justify-content: space-between; */
+}
+.song_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.track_details {
+  width: 20vw;
+  padding-left: 20px;
+  color: rgb(4, 4, 4);
+}
+.duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list{
+display: block;
+}
+.img-cont img {
+  /* height:20px; */
+  width: 40px;
+  border-radius: 50%;
+}
+#head {
+  font-size: 17px;
+}
+#writer {
+  font-size: 12px;
+}
+.container {
+  z-index: 5;
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 376px) {
+  .heading {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .songs_container {
+    position: absolute;
+    padding: 0;
+    /* display: none; */
+    z-index: 100;
+  }
+  .hamburger {
+    position: absolute;
+    right: -345px;
+    top: 14px;
+    /*  */
+  }
+  .hamburger img {
+    height: 50px;
+  }
+  .list {
+    top: 72px;
+    background-color: rgb(209, 195, 195);
+    width: 95vw;
+    padding-left: 25px;
+    position: absolute;
+    overflow: auto;
+    display: none;
+    height: 80vh;
+    border-radius: 10px;
+    overflow-x: hidden;
+  }
+  .track_container {
+    width: 100vw;
+  }
+  .track_details {
+    width: 50vw;
+  }
+}
+
+
+
+
+.container:focus-within{
+  background-color: rebeccapurple;
+}

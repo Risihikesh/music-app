@@ -1,0 +1,34 @@
+.listitems {
+  /* background-color: rgb(112, 106, 106); */
+  font-family: "Basier Circle";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 12px;
+  padding-left: 100px;
+  /* vw; */
+  padding-left: 30px;
+    padding-top: 25px;
+}
+.listitems li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+#selected {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 376px) {
+  .listitems img {
+    position: absolute;
+    left: 16px;
+    top: 11px;
+  }
+  .listitems li {
+    display: none;
+  }
+  .listitems {
+    width: 0;
+  }
+}
